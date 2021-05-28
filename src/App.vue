@@ -3,7 +3,8 @@
 </template>
 
 <script>
-import CodeEditor from './components/code-editor';
+import { ref } from 'vue'
+import CodeEditor from './components/code-editor'
 
 export default {
   name: 'App',
@@ -11,11 +12,8 @@ export default {
     CodeEditor
   },
   setup(props) {
-    let code = `const answer = 42;`;
-    const printChanges = v => {
-      alert(v);
-    }
-    return { code, printChanges };
+    let code = ref(`const answer = 42;`);
+    return { code };
   }
 }
 </script>
