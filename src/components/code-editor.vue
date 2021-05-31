@@ -1,5 +1,5 @@
 <template>
-  <div ref="editor" class="editor"></div>
+  <div ref="editor"></div>
 </template>
 
 <script>
@@ -42,7 +42,7 @@ export default {
 </script>
 <style scoped>
 .cm-editor {
-  height: 200px;
+  height: 100%;
   border: solid 1px #ddd;
   border-radius: 4px;
 }

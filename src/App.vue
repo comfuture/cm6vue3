@@ -1,5 +1,5 @@
 <template>
-  <code-editor v-model="code"></code-editor>
+  <code-editor v-model="code" class="edit-area"></code-editor>
 </template>
 
 <script>
@@ -18,9 +18,7 @@ export default {
 }
 </script>
 <style scoped>
-.cm-editor {
-  height: 200px;
-  border: solid 1px #ddd;
-  border-radius: 4px;
+.edit-area {
+  height: 300px;
 }
 </style>
